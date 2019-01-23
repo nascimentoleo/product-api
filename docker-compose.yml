@@ -1,0 +1,23 @@
+version: '3'
+networks:
+  local:
+services:
+  db:
+    image: postgres:11
+    ports:
+      - 5434:5432
+    networks:
+      - local
+  web:
+    build: .
+    volumes:
+      - ./:/api
+    ports:
+      - 8004:8004
+    command: bash -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8004"
+    links:
+      - db:db
+    depends_on:
+      - db
+    networks:
+      - local
