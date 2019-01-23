@@ -111,15 +111,15 @@ put the `access` token inside your header requests, like this:
 
 ### REQUEST
 
-`
+```
 GET http://localhost:8004/products/
 Content-Type: application/json
 Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTQ4Mjg1ODU5LCJqdGkiOiIwN2E2NWU1NWIzMjc0YmNkODY2YmIwNjdkYWEzZWRjNiIsInVzZXJfaWQiOjF9.j8a8zf05KEy0qeRr845yEdZjmFJlBYWn7K9ehNZGdQc
-`
+```
 
 ### RESPONSE
 
-`
+```
 {
     "count": 1,
     "next": null,
@@ -141,4 +141,4 @@ Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiY
         }
     ]
 }
-`
+```
