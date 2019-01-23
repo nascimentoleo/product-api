@@ -11,37 +11,37 @@ The api has six endpoints:
 
 This API uses JWT Authentication, so accessing the endpoints requires an access token.
 
-**POST/** `/api/token/`: Receives an `username` and `password` for generates the access token and refresh token, valid for 5 minutes.
+**POST** `/api/token/`: Receives an `username` and `password` for generates the access token and refresh token, valid for 5 minutes.
 
-**POST/** `/api/token/refresh`: Receives an `refresh` token for generates a new access token.
+**POST** `/api/token/refresh`: Receives an `refresh` token for generates a new access token.
 
 ### 2. Category Endpoints
 
 Endpoints to Create, Update, Retrieve and Delete category of products.
 
-**POST/** `/categories/`: Receives an category object for create it.
+**POST** `/categories/`: Receives an category object for create it.
 
-**GET/** `/categories/`: Retrives all categories stored in database.
+**GET** `/categories/`: Retrives all categories stored in database.
 
-**GET/** `/categories/<category_id>/`: Retrieves one specific category by id.
+**GET** `/categories/<category_id>/`: Retrieves one specific category by id.
 
-**PUT/** `/categories/<category_id>/`: Receives an category object and its id for update it.
+**PUT** `/categories/<category_id>/`: Receives an category object and its id for update it.
 
-**DELETE/** `/categories/<category_id>/`: Removes one specific category by id.
+**DELETE** `/categories/<category_id>/`: Removes one specific category by id.
 
 ### 3. Product Endpoints
 
 Endpoints to Create, Update, Retrieve and Delete products.
 
-**POST/** `/products/`: Receives an product object for create it.
+**POST** `/products/`: Receives an product object for create it.
 
-**GET/** `/products/`: Retrives all products stored in database.
+**GET** `/products/`: Retrives all products stored in database.
 
-**GET/** `/products/<product_id>/`: Retrieves one specific product by id.
+**GET** `/products/<product_id>/`: Retrieves one specific product by id.
 
-**PUT/** `/products/<product_id>/`: Receives an product object and its id for update it.
+**PUT** `/products/<product_id>/`: Receives an product object and its id for update it.
 
-**DELETE/** `/products/<product_id>/`: Removes one specific product by id.
+**DELETE** `/products/<product_id>/`: Removes one specific product by id.
 
 
 ## Instructions for running the project
