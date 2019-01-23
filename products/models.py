@@ -8,6 +8,9 @@ class Category(models.Model):
     created_at = models.DateTimeField(default=now, blank=True)
     updated_at = models.DateTimeField(default=now, blank=True)
 
+    def __str__(self):
+        return self.name
+
 
 class Product(models.Model):
     id = models.AutoField(primary_key=True)
@@ -18,3 +21,5 @@ class Product(models.Model):
     created_at = models.DateTimeField(default=now, blank=True)
     updated_at = models.DateTimeField(default=now, blank=True)
 
+    def __str__(self):
+        return self.name

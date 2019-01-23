@@ -2,7 +2,7 @@ from .defaults import *
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost ']
+ALLOWED_HOSTS = ['localhost']
 
 DATABASES = {
     'default': {
