@@ -70,7 +70,7 @@ sudo docker-compose build
 
 **4. Create admin superuser**
 ```
-docker-compose run web python manage.py createsuperuser
+sudo docker-compose run web python manage.py createsuperuser
 ```
 
 After run this command, choose your username, email and password for superuser. Save this, will be necessaire for generate access token.
@@ -84,8 +84,7 @@ sudo docker-compose up
 **Opcional: Run Tests**
 
 ```
-sudo docker-compose run web rake test
-
+sudo docker-compose run web python manage.py test
 ```
 
 After that you can access the api in `http://localhost:8004/`
