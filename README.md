@@ -11,9 +11,9 @@ The api has six endpoints:
 
 This API uses JWT Authentication, so accessing the endpoints requires an access token.
 
-**POST** `/api/token/`: Receives an `username` and `password` for generates the access token and refresh token, valid for 5 minutes.
+**POST** `/api/token/`: Receives an `username` and `password` for generate the access token and refresh token, valid for 5 minutes.
 
-**POST** `/api/token/refresh`: Receives an `refresh` token for generates a new access token.
+**POST** `/api/token/refresh`: Receives an `refresh` token for generate a new access token.
 
 ### 2. Category Endpoints
 
