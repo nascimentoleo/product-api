@@ -76,11 +76,6 @@ sudo docker-compose run web python manage.py createsuperuser
 After run this command, choose your username, email and password for superuser. Save this, will be necessaire for generate access token.
 
 
-**6. Start container**
-```
-sudo docker-compose up
-```
-
 **Opcional: Run Tests**
 
 ```
