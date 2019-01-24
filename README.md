@@ -63,9 +63,9 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-
 sudo chmod +x /usr/local/bin/docker-compose
 ```
 
-**3. Create containers**
+**3. Create and run containers**
 ```
-sudo docker-compose build
+sudo docker-compose up
 ```
 
 **4. Create admin superuser**
