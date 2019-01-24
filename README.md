@@ -63,10 +63,11 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-
 sudo chmod +x /usr/local/bin/docker-compose
 ```
 
-**3. Create and run containers**
+**3. Create containers**
 ```
 sudo docker-compose up
 ```
+After creating, press Ctrl + C to exit the container
 
 **4. Create admin superuser**
 ```
@@ -75,6 +76,10 @@ sudo docker-compose run web python manage.py createsuperuser
 
 After run this command, choose your username, email and password for superuser. Save this, will be necessaire for generate access token.
 
+**5. Run containers**
+```
+sudo docker-compose up
+```
 
 **Opcional: Run Tests**
 
